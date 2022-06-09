@@ -8,8 +8,6 @@ import { useUI } from "@components/ui/context";
 const Navbar: FC = () => {
   const ui = useUI();
 
-  console.log(ui);
-
   return (
     <Container>
       <div className={s.root}>
