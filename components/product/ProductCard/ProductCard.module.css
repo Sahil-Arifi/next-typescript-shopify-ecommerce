@@ -14,11 +14,11 @@
   }
 
   &:nth-child(6n + 1) .productBg {
-    @apply bg-violet;
+    @apply bg-red;
   }
 
   &:nth-child(6n + 3) .productBg {
-    @apply bg-pink;
+    @apply bg-blue;
   }
 }
 

@@ -8,6 +8,24 @@ export interface ProductPrice {
   currencyCode: "USD" | "EUR" | string;
 }
 
+export interface ProductOptionValues {
+  map(arg0: (value: any) => JSX.Element): import("react").ReactNode;
+  label: string;
+  hexColor?: string;
+}
+
+export interface ProductOption {
+  id: string;
+  displayName: string;
+  values: ProductOptionValues;
+}
+
+export interface ProductVariant {
+  id: string;
+  name: string;
+  options: ProductOption[];
+}
+
 export interface Product {
   id: string;
   name: string;
@@ -16,4 +34,6 @@ export interface Product {
   path: string;
   images: ProductImage[];
   price: ProductPrice;
+  options: ProductOption[];
+  variants: ProductVariant[];
 }

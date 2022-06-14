@@ -3,3 +3,4 @@ export { default as Container } from "./Container";
 export { default as Marquee } from "./Marquee";
 export { default as Sidebar } from "./Sidebar";
 export { default as Grid } from "./Grid";
+export { default as Button } from "./Button";
